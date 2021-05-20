@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
 .grand-container {
     width: auto;
     height: auto;
@@ -6,25 +7,32 @@
 }
 
 .order-container {
-    background-color: aqua;
     width: 55%;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    box-shadow: black;
+    box-shadow: 0 0 40px black;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 .heading-page {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    padding: 1% 0 1.5% 0;
-    border-bottom: 2px solid orchid;
+    padding: 1% 3% 0 3%;
+    border-bottom: 2px solid #b5c6ce;
 }
 
 .name-page {
     text-align: center;
     text-decoration: none;
+    color: #b5c6ce;
+}
+
+.select-page {
+    color: #5F9aad;
+    border-bottom: 4px solid #b5c6ce;
+    padding-bottom: 1%;
 }
 
 .content-container {
@@ -32,7 +40,6 @@
     height: 80%;
     margin: 0 10% 0 10%;
     margin-top: 5%;
-    background-color: brown;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -42,6 +49,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: -15%;
 }
 
 .image-order {
@@ -49,13 +57,26 @@
     height: 80%;
 }
 
-.info-order-container {}
+.info-order-container {
+    margin-top: 5%;
+    margin-left: 5%;
+}
 
 .form-order-container {}
 
 .name-order {}
 
-.quantity-order {}
+.quantity-order-name {}
+
+.quantity-order {
+    width: 60%;
+    font-size: 20px;
+    padding: 3%;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+    margin-top: -10%;
+}
 
 .price-oreder {}
 
