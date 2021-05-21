@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/indexStyles.css">
     <link rel="stylesheet" href="../styles/shippingStyles.css">
+    <link rel="stylesheet" href="../styles/autocompliterStyle.css">
     <title>Document</title>
 </head>
 
@@ -18,33 +19,49 @@
             <a href="../pages/payment.html" class="name-page">PAYMENT DETAILS</a>
             <a href="../pages/confirmation.html" class="name-page">CONFIRMATION</a>
         </div>
-        <div class="content-container">
+        <div class="content-container content-container-autocomp">
             <div class="left-order-container">
                 <img class="image-shipping" src="../img/shipping.png" alt="Shipping image">
             </div>
             <div class="info-order-container">
-                <form class="form-order-container" action="">
+                <form class="form-order-container" action="" autocomplete="off" id="shipping-form">
                     <h2 class="name-order">SHIPPING DETAILS</h2>
                     <h5 class="quantity-order-name">Enter your address</h5>
-                    <input class="shipping-order" type="text" min="1" placeholder="Ukraine"><br><br>
-                    <input class="shipping-order" type="text" min="1" placeholder="Kiev region"><br><br>
-                    <input class="shipping-order" type="text" min="1" placeholder="Kiev"><br><br>
-                    <div class="street-container">
-                        <input class="shipping-order shipping-order-street1" type="text" min="1" placeholder="Khreshchatyk">
-                        <input class="shipping-order shipping-order-street2" type="text" min="1" placeholder="56">
+                    <input class="shipping-order" type="text" id="autocomplete" placeholder="Country" autocomplete="off"><br><br>
+                    <input class="shipping-order region-style" type="text" min="1" placeholder="Region"><br><br>
+                    <input class="shipping-order city-style" id="autocomplete" type="text" min="1" placeholder="City" autocomplete="off"><br><br>
+                    <div class="street-container street-container-autcomp">
+                        <input class="shipping-order shipping-order-street1" type="text" min="1" placeholder="Street">
+                        <input class="shipping-order shipping-order-street2" type="text" min="1" placeholder="N">
                     </div>
                 </form>
-                <button class="order-button" onclick="document.location.href='../pages/payment.html'">PAYMENT DETAILS</button>
+                <button form="form-order" class="order-button button-autcomp" onclick="document.location.href='../pages/payment.html'">PAYMENT DETAILS</button>
             </div>
 
         </div>
-        <div class="back-link-container">
+        <div class="back-link-container back-autocmp">
             <p class="back-arrow">
                 <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="long-arrow-alt-left" class="svg-inline--fa fa-long-arrow-alt-left fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M134.059 296H436c6.627 0 12-5.373 12-12v-56c0-6.627-5.373-12-12-12H134.059v-46.059c0-21.382-25.851-32.09-40.971-16.971L7.029 239.029c-9.373 9.373-9.373 24.569 0 33.941l86.059 86.059c15.119 15.119 40.971 4.411 40.971-16.971V296z"></path></svg>
             </p>
             <a href="../index.html" class="back-link">Back to order</a>
         </div>
+        <script src="../assets/index.js"></script>
     </div>
 </body>
 
 </html>
+
+<script>
+    fetch('../assets/data.json').then(data => {
+        data.json().then(json => {
+            let countries = json.countries
+            Autocomplete('#autocomplete', countries)
+        })
+    })
+    fetch('../assets/dataCity.json').then(data => {
+        data.json().then(json => {
+            let city = json.city
+            Autocomplete('#autocomplete', city)
+        })
+    })
+</script>

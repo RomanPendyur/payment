@@ -22,14 +22,14 @@
                 <img class="image-order" src="./img/6577360_0.jpg" alt="Your product">
             </div>
             <div class="info-order-container">
-                <form class="form-order-container" action="">
+                <form class="form-order-container" action="" id="form-order">
                     <h2 class="name-order">SONY PlayStation 5</h2>
                     <h5 class="quantity-order-name">Enter quantity</h5>
-                    <input class="quantity-order" type="number" min="1" placeholder="1">
+                    <input class="quantity-order" type="number" min="1" placeholder="1" required>
                     <h2 class="price-oreder">Order price is</h2>
                     <h3>1500$</h3>
                 </form>
-                <button class="order-button" onclick="document.location.href='./pages/shipping.html'">SHIPPING DETAILS</button>
+                <button class="order-button" onclick="document.location.href='./pages/shipping.html'" form="form-order">SHIPPING DETAILS</button>
             </div>
 
         </div>
