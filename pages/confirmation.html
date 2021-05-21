@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../styles/indexStyles.css">
     <link rel="stylesheet" href="../styles/shippingStyles.css">
     <link rel="stylesheet" href="../styles/payment.css">
+    <link rel="stylesheet" href="../styles/confirmation.css">
     <title>Document</title>
 </head>
 
@@ -21,22 +22,32 @@
         </div>
         <div class="content-container">
             <div class="left-confirm-container">
-                <h2>SONY PlayStation 5</h2>
-                <p>Quantity</p>
-                <p>1</p>
-                <p>Price</p>
-                <p>1500$</p>
-            </div>
-            <div class="centr-confirm-container">
-                <p>Your address</p>
-                <p>Ukraine, Kiev region, Kreshatyk, 56</p>
+                <h2 class="name-purchase">SONY PlayStation 5</h2>
+                <div class="quantity-purchase-container">
+                    <p class="quantity-purchase-title">Quantity</p>
+                    <p class="quantity-purchase">1</p>
+                </div>
+                <div class="prise-purchase-container">
+                    <p class="prise-purchase-title">Price</p>
+                    <p class="prise-purchase">1500$</p>
+                </div>
+                <p class="address-title">Your address</p>
+                <p class="address-buyer">Ukraine, Kiev region, Kreshatyk, 56</p>
             </div>
             <div class="right-confirm-container">
-                <p>Your name</p>
-                <p>Vasya Pupkin</p>
-                <p>Your card Number</p>
-                <p>0000-0000-0000-0000</p>
-                <button class="order-button confirm-button" onclick="document.location.href='./pages/shipping.html' ">CONFIRM</button>
+                <div class="right-confirm-content">
+                    <p class="name-buyer-title">Your name</p>
+                    <p class="name-buyer">Vasya Pupkin</p>
+                </div>
+                <div class="right-confirm-content">
+                    <p class="number-buyer-title">Your card Number</p>
+                    <p class="number-buyer">0000-0000-0000-0000</p>
+                </div>
+                <div class="right-confirm-content">
+                    <P class="trought-buyer-title">Valid Trough</P>
+                    <P class="trought-buyer">09/05</P>
+                </div>
+                <button class="order-button confirm-button confirm-button-conf" onclick="document.location.href='../pages/thanks.html' ">CONFIRM</button>
             </div>
 
         </div>

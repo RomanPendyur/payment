@@ -1,0 +1,21 @@
+.thanks-container {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading-thanks {
+    font-size: 40px;
+    color: lightseagreen;
+}
+
+.back-link {
+    text-decoration: none;
+}
+
+.my-signature {
+    font-size: 10px;
+    margin-top: 45%;
+    margin-left: 50%;
+}
