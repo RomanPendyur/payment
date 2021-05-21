@@ -7,7 +7,8 @@
 }
 
 .order-container {
-    width: 55%;
+    width: 756px;
+    height: 572;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -27,6 +28,10 @@
     text-align: center;
     text-decoration: none;
     color: #b5c6ce;
+}
+
+.name-page:hover {
+    color: #5F9aad;
 }
 
 .select-page {
@@ -62,12 +67,6 @@
     margin-left: 5%;
 }
 
-.form-order-container {}
-
-.name-order {}
-
-.quantity-order-name {}
-
 .quantity-order {
     width: 60%;
     font-size: 20px;
@@ -78,15 +77,44 @@
     margin-top: -10%;
 }
 
-.price-oreder {}
+.order-button {
+    width: 180px;
+    height: 50px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    background-color: #3081ac;
+}
 
-.order-button {}
+.order-button:hover {
+    background-color: #279edf;
+}
 
-.back-link-container {}
+.back-link-container {
+    margin: 5% 0 5% 10%;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    color: #3081ac;
+}
 
 .back-arrow {
-    width: 20px;
+    width: 30px;
     height: 20px;
 }
 
-.back-link {}
+.back-link {
+    background-color: white;
+    width: 80px;
+    margin: 10% 0 0 10%;
+    font-size: 13px;
+    text-decoration: none;
+    color: #3081ac;
+}
+
+.back-link-container:hover,
+.back-link:hover {
+    color: #279edf;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/indexStyles.css">
+    <link rel="stylesheet" href="../styles/shippingStyles.css">
+    <link rel="stylesheet" href="../styles/payment.css">
+    <title>Document</title>
+</head>
+
+<body class="grand-container">
+    <div class="order-container">
+        <div class="heading-page">
+            <a href="../index.html" class="name-page">YOUR ORDER</a>
+            <a href="../pages/shipping.html" class="name-page">SHIPPING DETAILS</a>
+            <a href="../pages/payment.html" class="name-page select-page">PAYMENT DETAILS</a>
+            <a href="../pages/confirmation.html" class="name-page">CONFIRMATION</a>
+        </div>
+        <div class="content-container">
+            <div class="left-order-container">
+                <div class="payment-card">
+                    <img class="chip" src="../img/chip.png" alt="">
+                    <img class="logo-system" src="../img/visa.png" alt="">
+                    <h5 class="card-number-card">0000 0000 0000 0000</h5>
+                    <p class="name-on-card-card">Name Surname</p>
+                    <p class="date-on-card-card">09/05</p>
+                </div>
+            </div>
+            <div class="info-order-container">
+                <form class="form-order-container" action="">
+                    <h2 class="name-order">PAYMENT DETAILS</h2>
+                    <p class="quantity-order-name">Name on Card</p>
+                    <input class="shipping-order name-on-card-input" type="text" min="1" placeholder="Name Surmane"><br><br>
+                    <p class="quantity-order-name card-number-title">Card Number</p>
+                    <div class="card-number-container">
+                        <input class="shipping-order card-number-input" type="text" minlength="4" maxlength="4" placeholder="0000">
+                        <input class="shipping-order card-number-input" type="text" minlength="4" maxlength="4" placeholder="0000">
+                        <input class="shipping-order card-number-input" type="text" minlength="4" maxlength="4" placeholder="0000">
+                        <input class="shipping-order card-number-input" type="text" minlength="4" maxlength="4" placeholder="0000">
+                    </div>
+
+                    <div class="down-container">
+                        <div class="down-container1">
+                            <p class="down-container1-date">Valid Trough</p><br><br>
+                            <div class="down-container1-dates-input">
+                                <input class="down-container1-date-input date-on-card-input" minlength="2" maxlength="2" placeholder="mont">
+                                <input class="down-container1-date-input date-on-card-input" minlength="2" maxlength="2" placeholder="year">
+                            </div>
+                        </div>
+                        <div class="down-container2">
+                            <p class="down-container2-cvv">CVV</p><br><br>
+                            <input class="down-container2-cvv-input" type="text " min="1 " placeholder="cvv ">
+                        </div>
+                    </div>
+                </form>
+                <button class="order-button confirm-button" onclick="document.location.href='../pages/confirmation.html'">CONFIRM</button>
+            </div>
+
+        </div>
+        <div class="back-link-container ">
+            <p class="back-arrow ">
+                <svg aria-hidden="true " focusable="false " data-prefix="fas " data-icon="long-arrow-alt-left " class="svg-inline--fa fa-long-arrow-alt-left fa-w-14 " role="img " xmlns="http://www.w3.org/2000/svg " viewBox="0 0 448 512
+                        "><path fill="currentColor " d="M134.059 296H436c6.627 0 12-5.373 12-12v-56c0-6.627-5.373-12-12-12H134.059v-46.059c0-21.382-25.851-32.09-40.971-16.971L7.029 239.029c-9.373 9.373-9.373 24.569 0 33.941l86.059 86.059c15.119 15.119 40.971 4.411 40.971-16.971V296z "></path></svg>
+            </p>
+            <a href="../pages/shipping.html " class="back-link ">Back to shipping</a>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+.image-shipping {
+    width: 400px;
+    height: 350px;
+}
+
+.shipping-order {
+    width: 200px;
+    height: 10px;
+    font-size: 20px;
+    padding: 3%;
+    outline: none;
+    border: none;
+    color: grey;
+    border-bottom: 2px solid grey;
+}
+
+.shipping-order:focus {
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+.street-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 200px;
+    height: 10px;
+    font-size: 20px;
+    padding: 3% 0 3% 0;
+    outline: none;
+    border: none;
+    margin: -12px 0 27px 0;
+}
+
+.shipping-order-street1 {
+    width: 60%;
+}
+
+.shipping-order-street2 {
+    width: 15%;
+}
